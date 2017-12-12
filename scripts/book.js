@@ -27,6 +27,7 @@ let app = app || {};
         Book.loadAll(res);
         call();
       })
+      .catch(app.errorView.errorCallBack(err));
   };
 
   module.Book = Book;
