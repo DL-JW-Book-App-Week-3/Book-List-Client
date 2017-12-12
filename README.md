@@ -17,7 +17,7 @@
 
 
 ## Architecture
-HTML, CSS, JavaScript, Postgres, Heroku
+HTML, CSS, JavaScript, Handlebars.js, Postgres, Heroku
 
 ## Change Log
 
