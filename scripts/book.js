@@ -1,6 +1,6 @@
 'use strict';
 
-let app = app || {};
+var app = app || {};
 
 (function (module) {
   function Book(rdo) { //Object Constructor for Books using rdo(rawDataObject)
@@ -27,7 +27,7 @@ let app = app || {};
         Book.loadAll(res);
         call();
       })
-      .catch(app.errorView.errorCallBack(err));
+      .catch(err => app.errorView.errorCallBack(err));
   };
 
   module.Book = Book;

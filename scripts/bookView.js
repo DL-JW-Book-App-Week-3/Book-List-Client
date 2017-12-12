@@ -1,13 +1,13 @@
 'use strict';
 
-let app = app || {};
+var app = app || {};
 
 (function (module) {
 
   let bookView = {};
 
   bookView.initIndexView = () => {
-    app.Book.all.forEach(b = > $('#book-view').append(b.toHtml()));
+    app.Book.all.forEach(b => $('#book-view').append(b.toHtml()));
   };
 
   module.bookView = bookView;
