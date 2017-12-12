@@ -14,3 +14,43 @@ header h1 {
   text-align: center;
   width: 80%;
 }
+
+/* Dynamic Book List Styling */
+
+.book {
+  border: 5px solid black;
+  width: 470px;
+  height: 400px;
+  margin: 30px auto;
+  background: #444;
+  position: relative;
+  clear: both;
+  overflow: none;
+}
+
+.book img {
+  height: 400px;
+  float: left;
+  border-right: 5px solid black;
+}
+
+.book h1 {
+  font-size: 40px;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.book h2 {
+  font-size: 32px;
+  text-align: center;
+  padding-top: 20px;
+  font-style: italic;
+}
+
+.book h3 {
+  position: absolute;
+  font-size: 24px;
+  bottom: 7px;
+  right: 7px;
+}
