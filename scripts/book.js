@@ -23,7 +23,7 @@ var __API_URL__ = 'http://localhost:3000';
   };
 
   Book.fetchAll = call => {
-    $.get(`${__API_URL__}api/v1/books`)
+    $.get(`${__API_URL__}/api/v1/books`)
       .then(res => Book.loadAll(res))
       .then(call)
       .catch(err => app.errorView.errorCallBack(err))
