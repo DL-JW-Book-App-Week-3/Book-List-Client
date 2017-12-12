@@ -1,11 +1,12 @@
 'use strict';
 
 var app = app || {};
+var __API_URL__ = 'http://localhost:3000';
 
 (function (module) {
   function Book(rdo) { //Object Constructor for Books using rdo(rawDataObject)
     Object.keys(rdo).forEach(key => this[key] = rdo[key]);
-  };
+  }
 
   Book.all = [];
 
@@ -22,12 +23,10 @@ var app = app || {};
   };
 
   Book.fetchAll = call => {
-    $.get('/books_app')
-      .then(res => {
-        Book.loadAll(res);
-        call();
-      })
-      .catch(err => app.errorView.errorCallBack(err));
+    $.get(`${__API_URL__}api/v1/books`)
+      .then(res => Book.loadAll(res))
+      .then(call)
+      .catch(err => app.errorView.errorCallBack(err))
   };
 
   module.Book = Book;
