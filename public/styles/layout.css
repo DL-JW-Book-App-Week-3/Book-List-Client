@@ -1,0 +1,16 @@
+/* Layout CSS Goes Below */
+
+header img {
+  width: 20%;
+  margin: 10px;
+  display: inline-block;
+}
+
+header h1 {
+  position: absolute;
+  top: 35%;
+  display: inline-block;
+  font-size: 35px;
+  text-align: center;
+  width: 80%;
+}
