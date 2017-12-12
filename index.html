@@ -19,10 +19,18 @@
       <h1>Code Fellows Books</h1>
     </header>
     <section id="book-view">
-
+        <script id="book-template" type="text/x-handlebars-template">
+          <div class="book">
+            <h1>{{title}}</h1>
+            <h2>{{author}}</h2>
+            <h3>{{isbn}}</h3>
+            <p>{{image_url}}</p>
+            <p>{{description}}</p>
+          </div>
+        </script>
     </section>
     <section id="book-about">
-
+      <!-- to be completed -->
     </section>
   </body>
   <script type="text/javascript">
