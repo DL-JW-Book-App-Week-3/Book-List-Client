@@ -13,18 +13,18 @@
       src = "https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.amd.min.js" //Handlebars CDN
     </script>
     <script id="book-template" type="text/x-handlebars-template">
-      <div class="book" data-id="{{book_id}}">
+      <a href="/{{book_id}}"><div class="book">
         <img src="{{image_url}}">
         <h2>{{title}}</h2>
         <p>{{author}}</p>
-      </div>
+      </div></a>
     </script>
     <script id="details-template" type="text/x-handlebars-template">
       <div class="details">
         <img src="{{image_url}}">
         <h2>{{title}}</h2>
         <h3>{{author}}</h3>
-        <h3>{{isbn}}</h3>
+        <h4>{{isbn}}</h3>
         <p>{{description}}</p>
       </div>
     </script>
@@ -32,9 +32,10 @@
 
   <body>
     <header>
-      <img src="resources/images/cfshield.png" alt="">
-      <h1>Code Fellows Books</h1>
-
+      <a href="/">
+        <img src="resources/images/cfshield.png" alt="">
+        <h1>Code Fellows Books</h1>
+      </a>
     </header>
     <section id="book-details">
       <!-- to be completed -->
@@ -44,9 +45,11 @@
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.js"></script>
+    <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
     <script src="scripts/errorView.js"></script>
     <script src="scripts/book.js"></script>
     <script src="scripts/bookView.js"></script>
+    <script src="scripts/routes.js"></script>
     <script>
       app.Book.fetchAll(app.bookView.initIndexView);
     </script>
