@@ -2,6 +2,6 @@
 
 $('.drop-down').hide();
 
-$('.navicon').on('click', function(){
+$('.navicon').on('click', function () {
     $('.drop-down').slideToggle(500);
-   });
+});
