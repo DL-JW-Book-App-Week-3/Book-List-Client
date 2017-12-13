@@ -1,7 +1,7 @@
 'use strict';
 
-$('.mainNavDropDown').hide();
+$('.drop-down').hide();
 
-$('.navicon').on('click', function(){
-    $('.mainNavDropDown').slideToggle(500);
-   });
+$('.navicon').on('click', function () {
+    $('.drop-down').slideToggle(500);
+});
