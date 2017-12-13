@@ -20,6 +20,15 @@
         <h3>{{book_id}}</h3>
       </div>
     </script>
+    <script id="details-template" type="text/x-handlebars-template">
+      <div class="book">
+        <img src="{{image_url}}">
+        <h1>{{title}}</h1>
+        <h2>{{author}}</h2>
+        <h3>{{isbn}}</h3>
+        <p>{{description}}</p>
+      </div>
+    </script>
   </head>
 
   <body>
@@ -28,11 +37,11 @@
       <h1>Code Fellows Books</h1>
 
     </header>
+    <section id="book-details">
+      <!-- to be completed -->
+    </section>
     <section id="book-view">
 
-    </section>
-    <section id="book-about">
-      <!-- to be completed -->
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.js"></script>
