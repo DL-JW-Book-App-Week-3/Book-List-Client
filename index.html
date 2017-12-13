@@ -32,7 +32,18 @@
 
   <body>
             <!--Start Of Hamburger Menu-->
-
+<nav>
+  <div class="mainNav clearfix">
+    <p class="navicon">&#9776;</p>
+  </div>
+  <ul class="mainNavDropDown clearfix">
+    <li>Placeholder</li>
+    <li>Placeholder</li>
+    <li>Placeholder</li>
+    <li>Placeholder</li>
+    <li>Placeholder</li>
+  </ul>
+</nav>
               <!--End of Hamburger Menu-->
     <header>
       <img src="resources/images/cfshield.png" alt="">
@@ -46,7 +57,7 @@
           <input type="text" name="author" placeholder="Author" value="">
           <input type="text" name="isbn" placeholder="ISBN" value="">
           <input type="text" name="image_url" placeholder="Image URL" value="">
-          <textarea name="description" placeholder="Please enter a description of the book:" rows="8" cols="80"></textarea>
+          <textarea name="description" placeholder="Please enter a description of the book." rows="8" cols="80"></textarea>
           <button type="submit">Submit</button>
         </form>
       </section>
@@ -61,6 +72,7 @@
     <script src="scripts/errorView.js"></script>
     <script src="scripts/book.js"></script>
     <script src="scripts/bookView.js"></script>
+    <script src="scripts/hamburger.js"></script>
     <script>
       app.Book.fetchAll(app.bookView.initIndexView);
     </script>
