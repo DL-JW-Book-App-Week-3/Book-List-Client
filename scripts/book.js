@@ -29,6 +29,14 @@ var __API_URL__ = 'http://localhost:3000';
       .catch(err => app.errorView.errorCallBack(err))
   };
 
+  Book.fetchOne = (ctx, call)=> {
+    console.log('fetching', ctx)
+    $.get(`${__API_URL__}/api/v1/books/${ctx.params.id}`)
+      .then(res => ctx.book = res)
+      .then(call)
+      .catch(console.error);
+  };
+
   module.Book = Book;
 
 })(app);
