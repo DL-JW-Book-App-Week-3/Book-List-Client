@@ -34,16 +34,48 @@ header h1 {
   border-right: 5px solid black;
 }
 
-.book h2 {
+.book h2, .details h2 {
   font-size: 40px;
   text-align: center;
   padding-top: 40px;
   padding-bottom: 40px;
 }
 
-.book p {
+.book p, .details h3{
   font-size: 32px;
   text-align: center;
   padding-top: 20px;
   font-style: italic;
+}
+
+/* Detailed View Styling */
+
+.details {
+  border: 5px solid black;
+  width: 470px;
+  margin: 30px auto;
+  background: #444;
+  position: relative;
+  clear: both;
+  overflow: none;
+}
+
+.details img {
+  height: 300px;
+  float: right;
+  border-left: 5px solid black;
+  border-bottom: 5px solid black;
+}
+
+.details h4 {
+  font-size: 18px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.details p {
+  font-size: 18px;
+  line-height: 2;
+  margin: 15px;
 }
