@@ -9,22 +9,40 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/layout.css">
     <link rel="stylesheet" href="styles/module.css">
+        <!--Start Of Hamburger Menu-->
+        <nav role="navigation">
+          <div id="menuToggle">
+    
+            <input type="checkbox" /> <!--Click Receiver-->
+            
+            <span></span>
+            <span></span>
+            <span></span>
+            
+            <ul id="menu">
+              <a href="#"><li>Temp</li></a>
+              <a href="#"><li>Temp</li></a>
+              <a href="#"><li>Temp</li></a>
+              <a href="#"><li>Temp</li></a>
+            </ul>
+          </div>
+        </nav>
+        <!--End of Hamburger Menu-->
     <script type="text/javascript">
       src = "https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.amd.min.js" //Handlebars CDN
     </script>
     <script id="book-template" type="text/x-handlebars-template">
-      <div class="book">
+      <div class="book" data-id="{{book_id}}">
         <img src="{{image_url}}">
-        <h1>{{title}}</h1>
-        <h2>{{author}}</h2>
-        <h3>{{book_id}}</h3>
+        <h2>{{title}}</h2>
+        <p>{{author}}</p>
       </div>
     </script>
     <script id="details-template" type="text/x-handlebars-template">
-      <div class="book">
+      <div class="details">
         <img src="{{image_url}}">
-        <h1>{{title}}</h1>
-        <h2>{{author}}</h2>
+        <h2>{{title}}</h2>
+        <h3>{{author}}</h3>
         <h3>{{isbn}}</h3>
         <p>{{description}}</p>
       </div>

@@ -34,23 +34,16 @@ header h1 {
   border-right: 5px solid black;
 }
 
-.book h1 {
+.book h2 {
   font-size: 40px;
   text-align: center;
   padding-top: 40px;
   padding-bottom: 40px;
 }
 
-.book h2 {
+.book p {
   font-size: 32px;
   text-align: center;
   padding-top: 20px;
   font-style: italic;
-}
-
-.book h3 {
-  position: absolute;
-  font-size: 24px;
-  bottom: 7px;
-  right: 7px;
 }
