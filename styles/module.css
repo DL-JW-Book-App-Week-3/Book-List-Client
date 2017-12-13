@@ -2,9 +2,9 @@
 
 .create-view {
   display: none;
-  width: 455px;
+  width: 480px;
 }
-  .mainNavDropDown{
+  .drop-down{
     position: absolute;
     width: 480px;
     padding-left: 0;
@@ -15,17 +15,17 @@
     opacity: 0.5;
     z-index: 2;
    }
-  .mainNavDropDown li{
+  .drop-down li{
     font-size: 20px;
     padding: 25px;
-    width: 100%;
+    width: 430px;
     background: rgb(156, 15, 86);
     border-bottom: 1px solid black;
    }
-  .mainNavDropDown li:last-child{
+  .drop-down li:last-child{
     border-bottom: none;
    }
-  .mainNavDropDown li:hover{
+  .drop-down li:hover{
     background: black;
     color: rgb(231, 24, 35)
    }
