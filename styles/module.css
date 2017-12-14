@@ -1,6 +1,7 @@
 /* new book submission form */
 
 .create-view {
+display: none;
 position: relative;
 width: 480px;
 padding: 50px;
