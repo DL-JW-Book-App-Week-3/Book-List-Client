@@ -25,8 +25,9 @@ var __API_URL__ = 'http://localhost:3000';
   };
 
   Book.prototype.updateRecord = function (call) {
+    console.log('updating', this);
     $.ajax({
-      url: `${__API_URL__}/api/v1/books/${this.id}`,
+      url: `${__API_URL__}/api/v1/books/${this.book_id}`,
       method: 'PUT',
       data: {title: this.title, author: this.author,image_url: this.image_url, isbn: this.isbn, description: this.description}
     })
@@ -34,8 +35,8 @@ var __API_URL__ = 'http://localhost:3000';
       .then(call)
   }
 
-  Book.deleteRecord = function (e) {
-    e.preventDefault();
+  Book.deleteRecord = function () {
+    console.log($('.details').data('id'));
     $.ajax({
       url: `${__API_URL__}/api/v1/books/${$('.details').data('id')}`,
       method: 'DELETE'

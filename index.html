@@ -18,9 +18,9 @@
       </div></a>
     </script>
     <script id="details-template" type="text/x-handlebars-template">
-      <div data-id="{{book_id}}"class="details">
-        <button data-id="update-btn" id="update-btn">update</button>
-        <button data-id="delete-btn" id="delete-btn">delete</button>
+      <div data-id="{{book_id}}" class="details">
+        <a href="/:id/update"><div data-id="update-btn" id="update-btn">update</div></a>
+        <a href="/:id/delete"><div data-id="delete-btn" id="delete-btn">delete</div></a>
         <img src="{{image_url}}">
         <h2>{{title}}</h2>
         <h3>{{author}}</h3>
@@ -34,14 +34,14 @@
     <header>
       <img src="resources/images/cfshield.png" alt="">
       <h1>Code Fellows Books</h1>
-    </header>       
+    </header>
 <nav> <!--Start Of Hamburger Menu-->
   <div class="main-nav clearfix">
     <p class="navicon">&#9776;</p>
   </div>
   <ul class="drop-down clearfix">
     <li><a href="/">Home</a></li>
-    <li><a href="/new"></a>New</li>
+    <li><a href="/new">New</a></li>
   </ul>
 </nav> <!--End of Hamburger Menu-->
 
@@ -57,9 +57,7 @@
 <p id="login">Welcome Admin!</p>
 <p id="logout">Admin Sign In</p>
 <div class="create-view"> <!--Start Of New Book Form-->
-  <p>
-    <a id="add">add new book</a>
-  </p>
+  <p>add new book</p>
   <form class="create-book">
     <input id="title" type="text" name="title" placeholder="  title" value="">
     <input id="author" type="text" name="author" placeholder="  author" value="">
@@ -69,22 +67,21 @@
     <button id="submit" type="submit">submit</button>
   </form>
 </div> <!--End Of New Book Form-->
+<div class="update-view"> <!--Start Of Book Update Form-->
+  <p>update: book title</p>
+  <form class="update-book">
+    <input id=book_id type="number" readonly>
+    <input id="title-update" type="text" name="title" placeholder="  title" value="">
+    <input id="author-update" type="text" name="author" placeholder="  author" value="">
+    <input id="isbn-update" type="text" name="isbn" placeholder="  isbn" value="">
+    <input id="url-update" type="text" name="image_url" placeholder="  image url" value="">
+    <textarea id="description-update" name="description" placeholder="  please enter a description of the book." rows="8" cols="80"></textarea>
+    <button id="submit-update" type="submit">submit</button>
+  </form>
+</div> <!--End Of Book Update Form-->
     <section id="book-details"> <!--Start Of Book Details-->
-      
+
     </section> <!--End Of Book Details-->
-    <div class="update-view"> <!--Start Of Book Update Form-->
-      <p>
-        <a id="update">update: book title</a>
-      </p>
-      <form class="update-book">
-        <input id="title2" type="text" name="title" placeholder="  title" value="">
-        <input id="author2" type="text" name="author" placeholder="  author" value="">
-        <input id="isbn2" type="text" name="isbn" placeholder="  isbn" value="">
-        <input id="url2" type="text" name="image_url" placeholder="  image url" value="">
-        <textarea id="description2" name="description" placeholder="  please enter a description of the book." rows="8" cols="80"></textarea>
-        <button id="submit2" type="submit">submit</button>
-      </form>
-    </div> <!--End Of Book Update Form-->
     <section id="book-view"> <!--Start Of Book View-->
 
     </section> <!--End Of Book View-->
