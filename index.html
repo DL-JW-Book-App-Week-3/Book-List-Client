@@ -44,17 +44,19 @@
   </ul>
 </nav>
               <!--End of Hamburger Menu-->
-    <section class="create-view">
-        <h2>Add New Book</h2>
-        <form class="create-book">
-          <input type="text" name="title" placeholder="Book Title" value="">
-          <input type="text" name="author" placeholder="Author" value="">
-          <input type="text" name="isbn" placeholder="ISBN" value="">
-          <input type="text" name="image_url" placeholder="Image URL" value="">
-          <textarea name="description" placeholder="Please enter a description of the book." rows="8" cols="80"></textarea>
-          <button type="submit">Submit</button>
-        </form>
-      </section>
+<div class="create-view">
+  <p>
+    <a id="add" href="#">add new book</a>
+  </p>
+  <form class="create-book">
+    <input id="title" type="text" name="title" placeholder="  title" value="">
+    <input id="author" type="text" name="author" placeholder="  author" value="">
+    <input id="isbn" type="text" name="isbn" placeholder="  isbn" value="">
+    <input id="url" type="text" name="image_url" placeholder="  image url" value="">
+    <textarea id="description" name="description" placeholder="  please enter a description of the book." rows="8" cols="80"></textarea>
+    <button id="submit" type="submit">submit</button>
+  </form>
+</div>
     <section id="book-details">
       <!-- to be completed -->
     </section>
