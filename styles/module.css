@@ -77,6 +77,85 @@ left: 8%;
   border: 1px solid #3C3C3C;
   border-radius: 5px;
 }
+/* update book submission form */
+
+.update-view {
+  /*display: none;*/
+  position: relative;
+  width: 480px;
+  padding: 50px;
+  left: 8%;
+  }
+  
+  #update {
+    display: block;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    left: 1%;
+    font-size: 20px;
+    text-decoration: underline;
+  }
+  
+  #title2 {
+    display: block;
+    margin-bottom: 15px;
+    height: 30px;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 12px;
+  }
+  #author2 {
+    display: block;
+    margin-bottom: 15px;
+    height: 30px;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 5px;
+     font-size: 12px;
+  }
+  #isbn2 {
+    display: block;
+    margin-bottom: 15px;
+    height: 30px;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 5px;
+      font-size: 12px;
+  }
+  #url2 {
+    display: block;
+    margin-bottom: 15px;
+    height: 30px;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 5px;
+      font-size: 12px;
+  }
+  #description2 {
+    display: block;
+    margin-bottom: 15px;
+    height: 100px;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 5px;
+      font-size: 12px;
+  }
+  
+  #submit2 {
+    display: block;
+    position: absolute;
+    left: 42%;
+    background-color: #3C3C3C;
+    color: #fff;
+    height: 45px;
+    width: 115px;
+    font-size: 12px;
+    font-weight: bold;
+    border: 1px solid #3C3C3C;
+    border-radius: 5px;
+  }
 
 /* main navigation and drop down menu */
 
