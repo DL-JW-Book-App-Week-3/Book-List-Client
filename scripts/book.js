@@ -16,6 +16,34 @@ var __API_URL__ = 'http://localhost:3000';
     return template(this);
   };
 
+  /////////////////// ** AJAX Requests  ** /////////////////////
+
+  Book.prototype.insertRecord = function (call) {
+    $.post(`${__API_URL__}/api/v1/books`, {title: this.title, author: this.author,image_url: this.image_url, isbn: this.isbn, description: this.description})
+      .then(console.log)
+      .then(call);
+  };
+
+  Book.prototype.updateRecord = function (call) {
+    $.ajax({
+      url: `${__API_URL__}/api/v1/books/${this.id}`,
+      method: 'PUT',
+      data: {title: this.title, author: this.author,image_url: this.image_url, isbn: this.isbn, description: this.description}
+    })
+      .then(console.log)
+      .then(call)
+  }
+
+  Book.deleteRecord = function (e) {
+    e.preventDefault();
+    $.ajax({
+      url: `${__API_URL__}/api/v1/books/${$('.details').data('id')}`,
+      method: 'DELETE'
+    })
+      .then(console.log)
+      .then(page('/'));
+  }
+
   Book.loadAll = rd => {
     rd.sort((a,b) => a.title > b.title? 1 : b.title > a.title? -1 : 0) // rd(rawData) sorted by title.
 
