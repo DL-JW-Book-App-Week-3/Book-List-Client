@@ -80,7 +80,7 @@ left: 8%;
 /* update book submission form */
 
 .update-view {
-  /*display: none;*/
+  display: none;
   position: relative;
   width: 480px;
   padding: 50px;
