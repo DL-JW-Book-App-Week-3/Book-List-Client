@@ -154,7 +154,7 @@
   text-decoration: underline;
 }
 
-#title2 {
+#title-update {
   display: block;
   margin-bottom: 15px;
   height: 30px;
@@ -164,7 +164,7 @@
   font-size: 12px;
 }
 
-#author2 {
+#author-update {
   display: block;
   margin-bottom: 15px;
   height: 30px;
@@ -174,7 +174,7 @@
   font-size: 12px;
 }
 
-#isbn2 {
+#isbn-update {
   display: block;
   margin-bottom: 15px;
   height: 30px;
@@ -184,7 +184,7 @@
   font-size: 12px;
 }
 
-#url2 {
+#url-update {
   display: block;
   margin-bottom: 15px;
   height: 30px;
@@ -194,7 +194,7 @@
   font-size: 12px;
 }
 
-#description2 {
+#description-update {
   display: block;
   margin-bottom: 15px;
   height: 100px;
@@ -204,7 +204,7 @@
   font-size: 12px;
 }
 
-#submit2 {
+#submit-update {
   display: block;
   position: absolute;
   left: 42%;
@@ -275,7 +275,7 @@
   font-size: 20px;
   padding: 25px;
   width: 430px;
-  background: linear-gradient(to right, #3C3C3C, #CB2B23);
+  background: linear-gradient(to bottom, #3C3C3C, #CB2B23) no-repeat;
   border-bottom: 1px solid black;
 }
 
