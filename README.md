@@ -1,6 +1,6 @@
 # Book-List-Client
 **Author**: Daniel and Jamie
-**Version**: 1.1.0
+**Version**: 1.3.0
 
 ## Overview
 
@@ -21,6 +21,10 @@ Add functionality to the book list application for viewing a single book's detai
 * As a user, I want my booklist to be a mobile-friendly single-page application so that I can view it on my mobile device.
 * As a user, I want my application to be clean and free of visual distractions so that I can view my books without other content cluttering the viewport.
 * As a user, I want a simple, clean looking UI so that my application is easy to navigate.
+* As a user, I want to have buttons in my detail view so that I can easily update or delete a single book with the click of a button.
+* As a user, I want to be able to delete a single book so that my list is always current.
+* As a user, I want to be able to update a single book so that my list is accurate and can be modified as needed.
+* As a user, I want to have admin-only routes so that I can control access to updating and deleting books from my app.
 ## Getting Started
 
 
