@@ -1,4 +1,21 @@
+/* login and logout message */
+
+#login {
+  display: block;
+  float: left;
+  font-size: 36px;
+  width: 480;
+}
+
+#logout {
+  display: block;
+  float: left;
+  font-size: 36px;
+  width: 480;
+}
+
 /* buttons on details form */
+
 #delete-btn {
   display: block;
   position: absolute;
