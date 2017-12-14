@@ -1,18 +1,90 @@
 /* new book submission form */
 
 .create-view {
-  display: none;
-  width: 480px;
+position: relative;
+width: 480px;
+padding: 50px;
+left: 8%;
+}
+
+#add {
+  display: block;
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  left: 1%;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+#title {
+  display: block;
+  margin-bottom: 15px;
+  height: 30px;
+  width: 300px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 12px;
+}
+#author {
+  display: block;
+  margin-bottom: 15px;
+  height: 30px;
+  width: 300px;
+  border: 1px solid black;
+  border-radius: 5px;
+   font-size: 12px;
+}
+#isbn {
+  display: block;
+  margin-bottom: 15px;
+  height: 30px;
+  width: 300px;
+  border: 1px solid black;
+  border-radius: 5px;
+    font-size: 12px;
+}
+#url {
+  display: block;
+  margin-bottom: 15px;
+  height: 30px;
+  width: 300px;
+  border: 1px solid black;
+  border-radius: 5px;
+    font-size: 12px;
+}
+#description {
+  display: block;
+  margin-bottom: 15px;
+  height: 100px;
+  width: 300px;
+  border: 1px solid black;
+  border-radius: 5px;
+    font-size: 12px;
+}
+
+#submit {
+  display: block;
+  position: absolute;
+  left: 50%;
+  background-color: #3C3C3C;
+  color: #fff;
+  height: 45px;
+  width: 115px;
+  font-size: 12px;
+  font-weight: bold;
+  border: 1px solid #3C3C3C;
+  border-radius: 5px;
 }
 
 /* main navigation and drop down menu */
 
 .main-nav {
+  position: absolute;
   cursor: pointer;
   text-align: center;
   margin-top: -32px;
   font-size: 30px;
-  position: fixed;
   width: 480px;
   color: #FFF;
 }
