@@ -18,9 +18,9 @@
       </div></a>
     </script>
     <script id="details-template" type="text/x-handlebars-template">
-      <div class="details">
-        <button data-id="update">update</button>
-        <button data-id="delete">submit</button>
+      <div data-id="{{book_id}}"class="details">
+        <button data-id="update-btn" id="update-btn">update</button>
+        <button data-id="delete-btn" id="delete-btn">delete</button>
         <img src="{{image_url}}">
         <h2>{{title}}</h2>
         <h3>{{author}}</h3>
