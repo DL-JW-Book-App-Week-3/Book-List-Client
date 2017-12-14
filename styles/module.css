@@ -34,6 +34,7 @@
   width: 430px;
   background: linear-gradient(to right, #3C3C3C, #CB2B23);
   border-bottom: 1px solid black;
+  
 }
 
 .drop-down li:last-child {
@@ -42,5 +43,5 @@
 
 .drop-down li:hover {
   background: black;
-  color: rgb(231, 24, 35)
+  color: #CB2B23;
 }
