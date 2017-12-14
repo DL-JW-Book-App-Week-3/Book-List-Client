@@ -16,6 +16,7 @@ var app = app || {};
   };
 
   bookView.initDetailsView = ctx => {
+    $('#book-details').empty();
     $('.update-view').hide();
     $('.create-view').hide();
     $('#book-view').empty();
