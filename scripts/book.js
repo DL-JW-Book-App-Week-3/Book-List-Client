@@ -65,6 +65,20 @@ var __API_URL__ = 'http://localhost:3000';
       .catch(console.error);
   };
 
+  Book.validateAdmin = function(token) {
+    $.get(`${__API_URL__}admin/`, {token})
+      .then((result) => {
+        if(result) {
+          localStorage.token = true;
+          app.adminView.handleAdmin();
+          $('#login').hide();
+          $('#logout').show();
+        } else{
+          alert('incorrect password')
+        }
+      })
+    };
+
   module.Book = Book;
 
 })(app);
