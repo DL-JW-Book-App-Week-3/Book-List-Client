@@ -32,7 +32,7 @@
   font-size: 20px;
   padding: 25px;
   width: 430px;
-  background: rgb(156, 15, 86);
+  background: linear-gradient(to right, #3C3C3C, #CB2B23);
   border-bottom: 1px solid black;
 }
 
