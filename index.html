@@ -30,14 +30,12 @@
       </div>
     </script>
   </head>
-
   <body>
     <header>
       <img src="resources/images/cfshield.png" alt="">
       <h1>Code Fellows Books</h1>
-    </header>
-                <!--Start Of Hamburger Menu-->
-<nav>
+    </header>       
+<nav> <!--Start Of Hamburger Menu-->
   <div class="main-nav clearfix">
     <p class="navicon">&#9776;</p>
   </div>
@@ -45,11 +43,20 @@
     <li><a href="/">Home</a></li>
     <li><a href="/new"></a>New</li>
   </ul>
-</nav>
-              <!--End of Hamburger Menu-->
-<div class="create-view">
+</nav> <!--End of Hamburger Menu-->
+
+<div class="admin-view"> <!--Start Of Admin View Login-->
   <p>
-    <a id="add" href="#">add new book</a>
+    <a id="login">please enter your passphrase</a>
+  </p>
+  <form class="admin-view">
+    <input id="passphrase" type="text" name="title" placeholder="  . . . . ." value="">
+    <button id="submit3" type="submit">submit</button>
+  </form>
+</div> <!--End Of Hamburger Menu-->
+<div class="create-view"> <!--Start Of New Book Form-->
+  <p>
+    <a id="add">add new book</a>
   </p>
   <form class="create-book">
     <input id="title" type="text" name="title" placeholder="  title" value="">
@@ -59,13 +66,13 @@
     <textarea id="description" name="description" placeholder="  please enter a description of the book." rows="8" cols="80"></textarea>
     <button id="submit" type="submit">submit</button>
   </form>
-</div>
-    <section id="book-details">
+</div> <!--End Of New Book Form-->
+    <section id="book-details"> <!--Start Of Book Details-->
       
-    </section>
-    <div class="update-view">
+    </section> <!--End Of Book Details-->
+    <div class="update-view"> <!--Start Of Book Update Form-->
       <p>
-        <a id="update" href="#">update: book title</a>
+        <a id="update">update: book title</a>
       </p>
       <form class="update-book">
         <input id="title2" type="text" name="title" placeholder="  title" value="">
@@ -75,10 +82,10 @@
         <textarea id="description2" name="description" placeholder="  please enter a description of the book." rows="8" cols="80"></textarea>
         <button id="submit2" type="submit">submit</button>
       </form>
-    </div>
-    <section id="book-view">
+    </div> <!--End Of Book Update Form-->
+    <section id="book-view"> <!--Start Of Book View-->
 
-    </section>
+    </section> <!--End Of Book View-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.js"></script>
     <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>

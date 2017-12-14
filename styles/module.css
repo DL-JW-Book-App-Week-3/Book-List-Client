@@ -196,6 +196,36 @@
   border-radius: 5px;
 }
 
+/* admin login page */
+
+.admin-view {
+  width: 480px;
+  font-size: 26px;
+  margin-top: 10px;
+}
+
+#passphrase {
+  height: 50px;
+  width: 450px;
+  margin: 15px;
+  border: 1px solid #3C3C3C;
+  font-size: 18px;
+}
+
+#submit3 {
+  display: block;
+  position: absolute;
+  left: 58%;
+  margin-top: 20px;
+  background-color: #3C3C3C;
+  color: #fff;
+  height: 45px;
+  width: 115px;
+  font-size: 12px;
+  font-weight: bold;
+  border: 1px solid #3C3C3C;
+}
+
 /* main navigation and drop down menu */
 
 .main-nav {
