@@ -2,31 +2,32 @@
 #delete-btn {
   display: block;
   position: absolute;
-  left: 45%;
-  margin-top: 20px;
-  background-color: #3C3C3C;
+  left: 41%;
+  top: 1%;
+  background-color: #d13127;
   color: #fff;
-  height: 45px;
-  width: 115px;
+  height: 35px;
+  width: 65px;
   font-size: 12px;
   font-weight: bold;
   border: 1px solid #3C3C3C;
   border-radius: 5px;
-  }
-    #update-btn {
+}
+
+#update-btn {
   display: block;
   position: absolute;
-  left: 15%;
-  margin-top: 20px;
-  background-color: #3C3C3C;
+  left: 1%;
+  top: 1%;
+  background-color: #d13127;
   color: #fff;
-  height: 45px;
-  width: 115px;
+  height: 35px;
+  width: 65px;
   font-size: 12px;
   font-weight: bold;
   border: 1px solid #3C3C3C;
   border-radius: 5px;
-  }
+}
 
 /* new book submission form */
 

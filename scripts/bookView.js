@@ -23,8 +23,6 @@ var app = app || {};
     let template = Handlebars.compile($('#details-template').text());
     $('#book-details').show();
     $('#book-details').append(template(new app.Book(ctx)));
-    $('button[data-id="update-btn"]').on('click', page('/update'));
-    $('button[data-id="delete-btn"]').on('click', page('/delete'));
   }
 
   bookView.initCreatePage = () => {
@@ -39,22 +37,23 @@ var app = app || {};
     $('.update-view').hide();
     $('#book-view').empty();
     $('.update-view').show();
-    $('.create-view').on('submit', bookView.update);
+    $('#book_id').val(`${$('.details').data('id')}`)
+    $('.update-view').on('submit', bookView.update);
   }
 
   /////////////////// ** Book Building for AJAX Requests ** /////////////////////
 
   bookView.submit = e => {
     e.preventDefault();
-    let bookfile = new app.Book({
+    let bookFile = new app.Book({
       title: $('#title').val(),
       author: $('#author').val(),
       image_url: $('#url').val(),
       isbn: $('#isbn').val(),
       description: $('#description').val()
     })
-
-    bookfile.insertRecord();
+    console.log(bookFile);
+    bookFile.insertRecord();
 
     page('/');
   }
@@ -62,14 +61,14 @@ var app = app || {};
   bookView.update = e => {
     e.preventDefault();
     let updatedBook = new app.Book({
-      book_id: $('.details').data('id'),
-      title: $('#title').val(),
-      author: $('#author').val(),
-      image_url: $('#url').val(),
-      isbn: $('#isbn').val(),
-      description: $('#description').val()
+      book_id: parseInt($('#book_id').val()),
+      title: $('#title-update').val(),
+      author: $('#author-update').val(),
+      image_url: $('#url-update').val(),
+      isbn: $('#isbn-update').val(),
+      description: $('#description-update').val()
     })
-
+    console.log('sending', updatedBook);
     updatedBook.updateRecord();
 
     page('/');
