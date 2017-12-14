@@ -9,6 +9,12 @@
 
 .main-nav {
   cursor: pointer;
+  text-align: center;
+  margin-top: -32px;
+  font-size: 30px;
+  position: fixed;
+  width: 480px;
+  color: #C13F32;
 }
 
 .drop-down {
