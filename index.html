@@ -19,11 +19,14 @@
     </script>
     <script id="details-template" type="text/x-handlebars-template">
       <div class="details">
+        <button data-id="update">update</button>
+        <button data-id="delete">submit</button>
         <img src="{{image_url}}">
         <h2>{{title}}</h2>
         <h3>{{author}}</h3>
         <h4>{{isbn}}</h3>
         <p>{{description}}</p>
+
       </div>
     </script>
   </head>
@@ -57,22 +60,22 @@
     <button id="submit" type="submit">submit</button>
   </form>
 </div>
-<div class="update-view">
-  <p>
-    <a id="update" href="#">update: book title</a>
-  </p>
-  <form class="update-book">
-    <input id="title2" type="text" name="title" placeholder="  title" value="">
-    <input id="author2" type="text" name="author" placeholder="  author" value="">
-    <input id="isbn2" type="text" name="isbn" placeholder="  isbn" value="">
-    <input id="url2" type="text" name="image_url" placeholder="  image url" value="">
-    <textarea id="description2" name="description" placeholder="  please enter a description of the book." rows="8" cols="80"></textarea>
-    <button id="submit2" type="submit">submit</button>
-  </form>
-</div>
     <section id="book-details">
-      <!-- to be completed -->
+      
     </section>
+    <div class="update-view">
+      <p>
+        <a id="update" href="#">update: book title</a>
+      </p>
+      <form class="update-book">
+        <input id="title2" type="text" name="title" placeholder="  title" value="">
+        <input id="author2" type="text" name="author" placeholder="  author" value="">
+        <input id="isbn2" type="text" name="isbn" placeholder="  isbn" value="">
+        <input id="url2" type="text" name="image_url" placeholder="  image url" value="">
+        <textarea id="description2" name="description" placeholder="  please enter a description of the book." rows="8" cols="80"></textarea>
+        <button id="submit2" type="submit">submit</button>
+      </form>
+    </div>
     <section id="book-view">
 
     </section>
