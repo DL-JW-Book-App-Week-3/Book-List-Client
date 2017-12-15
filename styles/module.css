@@ -1,289 +1,160 @@
-/* login and logout message */
-
-#login {
-  display: block;
-  float: left;
-  font-size: 36px;
-  width: 480;
-}
-
-#logout {
-  display: block;
-  float: left;
-  font-size: 36px;
-  width: 480;
-}
-
-/* buttons on details form */
-
-#delete-btn {
-  padding-top: 10px;
-  text-align: center;
-  display: block;
-  position: absolute;
-  left: 41%;
-  top: 5px;
-  background-color: #d13127;
-  color: #fff;
-  height: 25px;
-  width: 65px;
-  font-size: 12px;
-  font-weight: bold;
-  border: 1px solid #3C3C3C;
-  border-radius: 5px;
-}
-
-#update-btn {
-  padding-top: 10px;
-  text-align: center;
-  display: block;
-  position: absolute;
-  left: 1%;
-  top: 5px;
-  background-color: #d13127;
-  color: #fff;
-  height: 25px;
-  width: 65px;
-  font-size: 12px;
-  font-weight: bold;
-  border: 1px solid #3C3C3C;
-  border-radius: 5px;
-}
-
-/* new book submission form */
-
-.create-view {
-  display: none;
-  position: relative;
-  width: 480px;
-  padding: 50px;
-  left: 8%;
-}
-
-#add {
-  display: block;
-  position: relative;
-  margin-top: 10px;
-  margin-bottom: 25px;
-  left: 1%;
-  font-size: 20px;
-  text-decoration: underline;
-}
-
-#title {
-  display: block;
-  margin-bottom: 15px;
-  height: 30px;
-  width: 300px;
-  border: 1px solid black;
-  border-radius: 5px;
-  font-size: 12px;
-}
-
-#author {
-  display: block;
-  margin-bottom: 15px;
-  height: 30px;
-  width: 300px;
-  border: 1px solid black;
-  border-radius: 5px;
-  font-size: 12px;
-}
-
-#isbn {
-  display: block;
-  margin-bottom: 15px;
-  height: 30px;
-  width: 300px;
-  border: 1px solid black;
-  border-radius: 5px;
-  font-size: 12px;
-}
-
-#url {
-  display: block;
-  margin-bottom: 15px;
-  height: 30px;
-  width: 300px;
-  border: 1px solid black;
-  border-radius: 5px;
-  font-size: 12px;
-}
-
-#description {
-  display: block;
-  margin-bottom: 15px;
-  height: 100px;
-  width: 300px;
-  border: 1px solid black;
-  border-radius: 5px;
-  font-size: 12px;
-}
-
-#submit {
-  display: block;
-  position: absolute;
-  left: 50%;
-  background-color: #3C3C3C;
-  color: #fff;
-  height: 45px;
-  width: 115px;
-  font-size: 12px;
-  font-weight: bold;
-  border: 1px solid #3C3C3C;
-  border-radius: 5px;
-}
-
-/* update book submission form */
-
-.update-view {
-  display: none;
-  position: relative;
-  width: 480px;
-  padding: 50px;
-  left: 8%;
-}
-
-#update {
-  display: block;
-  position: relative;
-  margin-top: 10px;
-  margin-bottom: 25px;
-  left: 1%;
-  font-size: 20px;
-  text-decoration: underline;
-}
-
-#title-update {
-  display: block;
-  margin-bottom: 15px;
-  height: 30px;
-  width: 300px;
-  border: 1px solid black;
-  border-radius: 5px;
-  font-size: 12px;
-}
-
-#author-update {
-  display: block;
-  margin-bottom: 15px;
-  height: 30px;
-  width: 300px;
-  border: 1px solid black;
-  border-radius: 5px;
-  font-size: 12px;
-}
-
-#isbn-update {
-  display: block;
-  margin-bottom: 15px;
-  height: 30px;
-  width: 300px;
-  border: 1px solid black;
-  border-radius: 5px;
-  font-size: 12px;
-}
-
-#url-update {
-  display: block;
-  margin-bottom: 15px;
-  height: 30px;
-  width: 300px;
-  border: 1px solid black;
-  border-radius: 5px;
-  font-size: 12px;
-}
-
-#description-update {
-  display: block;
-  margin-bottom: 15px;
-  height: 100px;
-  width: 300px;
-  border: 1px solid black;
-  border-radius: 5px;
-  font-size: 12px;
-}
-
-#submit-update {
-  display: block;
-  position: absolute;
-  left: 42%;
-  background-color: #3C3C3C;
-  color: #fff;
-  height: 45px;
-  width: 115px;
-  font-size: 12px;
-  font-weight: bold;
-  border: 1px solid #3C3C3C;
-  border-radius: 5px;
-}
-
-/* admin login page */
-
-.admin-view {
-  width: 480px;
-  font-size: 26px;
-  margin-top: 10px;
-}
-
-#passphrase {
-  height: 50px;
-  width: 450px;
-  margin: 15px;
-  border: 1px solid #3C3C3C;
-  font-size: 18px;
-}
-
-#submit3 {
-  display: block;
-  position: absolute;
-  left: 58%;
-  margin-top: 20px;
-  background-color: #3C3C3C;
-  color: #fff;
-  height: 45px;
-  width: 115px;
-  font-size: 12px;
-  font-weight: bold;
-  border: 1px solid #3C3C3C;
-}
-
-/* main navigation and drop down menu */
-
-.main-nav {
-  position: absolute;
-  cursor: pointer;
-  text-align: center;
-  margin-top: -32px;
-  font-size: 30px;
-  width: 480px;
-  color: #FFF;
-}
-
-.drop-down {
-  position: absolute;
-  width: 480px;
-  padding-left: 0;
-  margin: 0;
-  list-style: none;
-  text-align: center;
-  display: none;
-  z-index: 2;
-}
-
-.drop-down li {
-  font-size: 20px;
-  padding: 25px;
-  width: 430px;
-  background: linear-gradient(to bottom, #3C3C3C, #CB2B23) no-repeat;
-  border-bottom: 1px solid black;
-}
-
-.drop-down li:last-child {
-  border-bottom: none;
-}
-
-.drop-down li:hover {
-  background: black;
-  color: #CB2B23;
-}
+#login,#logout {
+  display:block;
+  float:left;
+  font-size:36px;
+  width:480px
+  }
+  
+  #delete-btn,#update-btn {
+  padding-top:10px;
+  text-align:center;
+  display:block;
+  position:absolute;
+  left:41%;
+  top:5px;
+  background-color:#d13127;
+  color:#fff;
+  height:25px;
+  width:65px;
+  font-size:12px;
+  font-weight:700;
+  border:1px solid #3C3C3C;
+  border-radius:5px
+  }
+  
+  #update-btn {
+  left:1%
+  }
+  
+  .create-view,.update-view {
+  display:none;
+  position:relative;
+  width:480px;
+  padding:50px;
+  left:8%
+  }
+  
+  #title,#author,#isbn,#url,#description {
+  display:block;
+  margin-bottom:15px;
+  height:30px;
+  width:300px;
+  border:1px solid #000;
+  border-radius:5px;
+  font-size:12px
+  }
+  
+  #submit {
+  display:block;
+  position:absolute;
+  left:50%;
+  background-color:#3C3C3C;
+  color:#fff;
+  height:45px;
+  width:115px;
+  font-size:12px;
+  font-weight:700;
+  border:1px solid #3C3C3C;
+  border-radius:5px
+  }
+  
+  #update,#add {
+  display:block;
+  position:relative;
+  margin-top:10px;
+  margin-bottom:25px;
+  left:1%;
+  font-size:20px;
+  text-decoration:underline
+  }
+  
+  #title-update,#author-update,#isbn-update,#url-update,#description-update {
+  display:block;
+  margin-bottom:15px;
+  height:30px;
+  width:300px;
+  border:1px solid #000;
+  border-radius:5px;
+  font-size:12px
+  }
+  
+  #submit-update {
+  display:block;
+  position:absolute;
+  left:42%;
+  background-color:#3C3C3C;
+  color:#fff;
+  height:45px;
+  width:115px;
+  font-size:12px;
+  font-weight:700;
+  border:1px solid #3C3C3C;
+  border-radius:5px
+  }
+  
+  .admin-view {
+  width:480px;
+  font-size:26px;
+  margin-top:10px;
+  display:none
+  }
+  
+  #passphrase {
+  height:50px;
+  width:450px;
+  margin:15px;
+  border:1px solid #3C3C3C;
+  font-size:18px
+  }
+  
+  #submit3 {
+  display:block;
+  position:absolute;
+  left:58%;
+  margin-top:20px;
+  background-color:#3C3C3C;
+  color:#fff;
+  height:45px;
+  width:115px;
+  font-size:12px;
+  font-weight:700;
+  border:1px solid #3C3C3C
+  }
+  
+  .main-nav {
+  position:absolute;
+  cursor:pointer;
+  text-align:center;
+  margin-top:-32px;
+  font-size:30px;
+  width:480px;
+  color:#FFF
+  }
+  
+  .drop-down {
+  position:absolute;
+  width:480px;
+  padding-left:0;
+  margin:0;
+  list-style:none;
+  text-align:center;
+  display:none;
+  z-index:2
+  }
+  
+  .drop-down li {
+  font-size:20px;
+  padding:25px;
+  width:430px;
+  background:linear-gradient(to bottom,#3C3C3C,#CB2B23) no-repeat;
+  border-bottom:1px solid #000
+  }
+  
+  .drop-down li:last-child {
+  border-bottom:none
+  }
+  
+  .drop-down li:hover {
+  background:#000;
+  color:#CB2B23
+  }
