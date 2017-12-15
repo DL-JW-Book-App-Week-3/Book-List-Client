@@ -1,5 +1,10 @@
 'use strict';
 
+
+if(window.location.pathname !== '/') {
+  page.base('/book-list-client');
+}
+
 page('/', app.Book.fetchAll(app.bookView.initIndexView));
 page('/new', app.bookView.initCreatePage);
 page('/:id', ctx => app.Book.fetchOne(ctx, app.bookView.initDetailsView));
