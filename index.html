@@ -45,6 +45,22 @@
   </ul>
 </nav> <!--End of Hamburger Menu-->
 
+<div class="search-view"> <!-- Start of Search-->
+      <form>
+          <label for="search">Search for Books</label>
+          <input type="text" name="author-search" row="1" cols="50">
+          <input type="text" name="title-search" row="1" cols="50">
+          <input type="number" name="isbn-search" row="1" cols="50">
+          <button id="submit" data-method="search">submit</button>
+      </form>
+</div> <!--End of Search-->
+  <div class="search-results"> <!--Start of Search Results-->
+    <ul id="search-content">
+
+    </ul>
+  </div> <!--End of Search Results-->
+
+
 <div class="admin-view"> <!--Start Of Admin View Login-->
   <p>
     <a id="login">please enter your passphrase</a>
