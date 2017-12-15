@@ -75,6 +75,26 @@ var app = app || {};
     page('/');
   }
 
+  bookView.initSearchFormPage = () => {
+    $('.admin-view').hide();
+    $('#book-details').empty();
+    $('.update-view').hide();
+    $('.create-view').hide();
+    $('#book-view').empty();
+    $('.search-results').show()
+    $('.search-view').show();
+  }
+
+  bookView.initSearchResultsPage = () => {
+    $('.admin-view').hide();
+    $('#book-details').empty();
+    $('.update-view').hide();
+    $('.create-view').hide();
+    $('#book-view').empty();
+    $('.search-view').hide();
+    $('.search-results').show();
+  }
+
   module.bookView = bookView;
 
 })(app);
