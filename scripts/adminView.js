@@ -1,31 +1,31 @@
 'use strict'
 
-let app = app || {};
+var app = app || {};
 
 (function (module) {
-    const adminView = {};
-    adminView.initAdminPage = () => {
-        $('.admin-view').show();
-    };
+  const adminView = {};
+  adminView.initAdminPage = () => {
+    $('.admin-view').show();
+  };
 
-    adminView.handleAdmin = () => {
-        $('.admin-view').hide();
-        $('.update-btn').show();
-        $('.delete-btn').show();
-    }
+  adminView.handleAdmin = () => {
+    $('.admin-view').hide();
+    $('.update-btn').show();
+    $('.delete-btn').show();
+  }
 
-    $('admin-login').on('submit', function (e) {
-        e.preventDefault();
-        let token = e.target.password.value;
-        app.Book.validateAdmin(token);
-    });
+  $('admin-login').on('submit', function (e) {
+    e.preventDefault();
+    let token = e.target.password.value;
+    app.Book.validateAdmin(token);
+  });
 
-    adminView.handleAdminLogout = () => {
-        localStorage.clear();
-        $('#logout').hide();
-        $('#login').show();
-        page('/');
-    }
+  adminView.handleAdminLogout = () => {
+    localStorage.clear();
+    $('#logout').hide();
+    $('#login').show();
+    page('/');
+  }
 
-    module.adminView = adminView
+  module.adminView = adminView
 })(app);
