@@ -68,11 +68,21 @@ var __API_URL__ = 'http://localhost:3000';
 
   Book.search = (ctx, call) => {
     console.log('searching', ctx)
-    $.get(`${__API_URL__}/api/v1/books/find`)
-      .then(res => ctx.book = res)
+    $.get(`${__API_URL__}/api/v1/books/find`, ctx)
+      .then(Book.loadAll)
       .then(call)
       .catch(console.error)
   }
+
+  ///////////////////// ** Still In Progress ** //////////////////////
+
+  // Book.searchOne = (isbn, call) => {
+  //   console.log('searching', isbn)
+  //   $.get(`${__API_URL__}/api/v1/books/find/${isbn}`)
+  //     .then(res => new Book(res))
+  //     .then(call)
+  //     .catch(console.error)
+  // }
 
   Book.validateAdmin = function(token) {
     $.get(`${__API_URL__}admin/`, {token})

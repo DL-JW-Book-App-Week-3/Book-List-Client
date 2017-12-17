@@ -57,8 +57,23 @@ var app = app || {};
     $('.update-view').hide();
     $('.create-view').hide();
     $('#book-view').empty();
-    $('.search-results').show()
+    $('.search-results').hide()
     $('.search-view').show();
+    $('.search-form').on('submit', (e) => {
+      e.preventDefault();
+
+      let searched = {
+        title: e.target.title.value || '',
+        author: e.target.author.value || '',
+        isbn: e.target.author.value || ''
+      };
+
+      app.Book.search(searched, bookView.initSearchResultsPage)
+
+      e.target.title.value = '';
+      e.target.author.value = '';
+      e.target.isbn.value = '';
+    })
   }
 
   bookView.initSearchResultsPage = () => {
@@ -68,6 +83,7 @@ var app = app || {};
     $('.create-view').hide();
     $('#book-view').empty();
     $('.search-view').hide();
+    app.Book.all.map(book => $('.search-results').append(book.toHtml()));
     $('.search-results').show();
   }
 
