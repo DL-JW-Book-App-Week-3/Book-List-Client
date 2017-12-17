@@ -9,6 +9,7 @@ var app = app || {};
   /////////////////// ** Page Initialization for Page JS ** /////////////////////
 
   bookView.initIndexView = () => {
+    $('.admin-view').hide();
     $('.update-view').hide();
     $('.create-view').hide();
     $('#book-details').empty();
@@ -16,6 +17,7 @@ var app = app || {};
   };
 
   bookView.initDetailsView = ctx => {
+    $('.admin-view').hide();
     $('#book-details').empty();
     $('.update-view').hide();
     $('.create-view').hide();
@@ -27,6 +29,7 @@ var app = app || {};
   }
 
   bookView.initCreatePage = () => {
+    $('.admin-view').hide();
     $('.update-view').hide();
     $('#book-view').empty();
     $('#book-details').empty();
@@ -35,11 +38,37 @@ var app = app || {};
   }
 
   bookView.initUpdatePage = () => {
+    $('.admin-view').hide();
     $('.update-view').hide();
     $('#book-view').empty();
     $('.update-view').show();
     $('#book_id').val(`${$('.details').data('id')}`)
+    $('#title-update').val(`${$('.details h2').text()}`)
+    $('#author-update').val(`${$('.details h3').text()}`)
+    $('#url-update').val(`${$('.details img').attr('src')}`)
+    $('#isbn-update').val(`${$('.details h4').text()}`)
+    $('#description-update').val(`${$('.details p').text()}`)
     $('.update-view').on('submit', bookView.update);
+  }
+
+  bookView.initSearchFormPage = () => {
+    $('.admin-view').hide();
+    $('#book-details').empty();
+    $('.update-view').hide();
+    $('.create-view').hide();
+    $('#book-view').empty();
+    $('.search-results').show()
+    $('.search-view').show();
+  }
+
+  bookView.initSearchResultsPage = () => {
+    $('.admin-view').hide();
+    $('#book-details').empty();
+    $('.update-view').hide();
+    $('.create-view').hide();
+    $('#book-view').empty();
+    $('.search-view').hide();
+    $('.search-results').show();
   }
 
   /////////////////// ** Book Building for AJAX Requests ** /////////////////////
