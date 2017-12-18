@@ -1,8 +1,26 @@
 #login,#logout {
-  display:block;
-  float:left;
-  font-size:36px;
-  width:480px
+  position:absolute;
+  top:10px;
+  right:100px;
+  }
+
+  label {
+    display: block;
+    left: 50px;
+    margin: 10px;
+  }
+
+  #author-search, #title-search, #isbn-search {
+    position: absolute;
+    margin: 10px;
+  }
+
+  #title-search {
+    left: 725px;
+  }
+
+  #isbn-search {
+    right: 525px;
   }
   
   #delete-btn,#update-btn {

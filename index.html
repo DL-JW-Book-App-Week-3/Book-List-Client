@@ -48,9 +48,9 @@
 <div class="search-view"> <!-- Start of Search-->
       <form>
           <label for="search">Search for Books</label>
-          <input type="text" name="author-search" cols="50">
-          <input type="text" name="title-search" cols="50">
-          <input type="number" name="isbn-search" cols="50">
+          <input id="author-search" type="text" name="author-search" cols="50">
+          <input id="title-search" type="text" name="title-search" cols="50">
+          <input id="isbn-search" type="number" name="isbn-search" cols="50">
           <button id="submit" data-method="search">submit</button>
       </form>
 </div> <!--End of Search-->
@@ -70,8 +70,12 @@
     <button id="submit3" type="submit">submit</button>
   </form>
 </div> <!--End Of Hamburger Menu-->
-<p id="login">Welcome Admin!</p>
-<p id="logout">Admin Sign In</p>
+<div class="login-message">
+<a id="login" href="">Welcome, Admin</a>
+<div>
+  <div class="logout-message">
+<a id="logout" href="">Sign In</a>
+</div>
 <div class="create-view"> <!--Start Of New Book Form-->
   <p>add new book</p>
   <form class="create-book">

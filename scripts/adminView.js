@@ -14,7 +14,7 @@ var app = app || {};
         $('.delete-btn').show();
     }
 
-    $('admin-login').on('submit', function (e) {
+    $('admin-view').on('submit', function (e) {
         e.preventDefault();
         let token = e.target.password.value;
         app.Book.validateAdmin(token);
